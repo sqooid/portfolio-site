@@ -5,6 +5,7 @@ import Projects from '@/pages/Projects.vue';
 import Cube from '@/pages/projects/Cube.vue';
 import Boored from '@/pages/projects/Boored.vue';
 import Contact from '@/pages/Contact.vue'
+import TripPlanner from '@/pages/projects/TripPlanner.vue'
 
 const routes: Array<RouteRecordRaw> = [
 	{

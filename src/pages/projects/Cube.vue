@@ -1,6 +1,12 @@
 <template>
-  <div class="project">
+  <div class="expos">
     <h1>Learning about 3D graphics</h1>
+    <p>
+      Source: <a
+        href="https://github.com/sqooid/cube-project"
+        class="link"
+      >https://github.com/sqooid/cube-project</a>
+    </p>
     <video
       class="video"
       controls

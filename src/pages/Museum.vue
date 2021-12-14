@@ -76,6 +76,16 @@ let exhibits:  {
 		img: 'https://cdn.discordapp.com/attachments/864062287102476311/917955748372303902/20211208_124618.jpg',
 		title: 'Megumin figurine',
 		description: "This will become a family heirloom"
+	},
+	{
+		img: 'https://cdn.discordapp.com/attachments/864062287102476311/920164748669116446/20211214_150546.jpg',
+		title: 'Custom Mechanical Keyboard',
+		description: "This is where I go sicko mode"
+	},
+	{
+		img: 'https://cdn.discordapp.com/attachments/864062287102476311/920165045021868074/20211214_150706.jpg',
+		title: 'Dual Shock 4 Controller',
+		description: "Essential for Dark Souls III and Nier:Automata"
 	}
 ]
 shuffleArray(exhibits);

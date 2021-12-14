@@ -38,7 +38,6 @@ const onClicked = () => {
 	background-size: 100% 200%;
 	background-image: linear-gradient(to top, #0000 50%, var(--primary-color) 50%);
 	transition: background-position 200ms cubic-bezier(0,1,.65,1);
-	color: var(--on-bar);
 }
 .button-text {
 	width: fit-content;

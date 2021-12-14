@@ -58,6 +58,7 @@ const buttonList = [
 	justify-content: left;
 	padding: 10px;
   padding-bottom: 5px;
+	color: var(--on-bar);
   flex-wrap: wrap;
 }
 

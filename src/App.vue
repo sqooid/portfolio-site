@@ -25,10 +25,25 @@ body {
   color: var(--on-background);
 }
 
-.project {
-  max-width: 980px;
+.expos {
+  max-width: 66ex;
   padding: 20px;
   margin: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+  background-position: 0 100%;
+	background-size: 100% 200%;
+	background-image: linear-gradient(to top, #0000 50%, var(--primary-color) 50%);
+	transition: all 0.2s cubic-bezier(0,1,0.65,1);
+}
+
+.link:hover {
+  color: var(--on-primary);
+	background-position: 0 0%;
+  border-bottom: var(--secondary-color) 1px solid;
 }
 
 </style>

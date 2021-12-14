@@ -1,8 +1,14 @@
 <template>
-  <div class="project">
+  <div class="expos">
     <h1>Boored</h1>
+    <p>
+      Source: <a
+        href="https://github.com/sqooid/boored"
+        class="link"
+      >https://github.com/sqooid/boored</a>
+    </p>
     <p class="description">
-      Boored is a prototype Android app that I created for browsing Booru sites. For anyone who is unfamiliar with what those are, they are essentially image hosting sites that allow you to filter the images using tags that are assigned to every image that is uploaded. The site that Boored uses specifically is Safebooru.
+      Boored is a prototype Android app that I created for browsing Booru sites. If you are unfamiliar with what those are, they are essentially image hosting sites that allow you to filter the images using tags that are assigned to every image that is uploaded. The site that Boored uses specifically is Safebooru.
     </p>
     <div class="feature">
       <BaseVideo
