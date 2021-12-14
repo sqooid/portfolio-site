@@ -44,7 +44,7 @@
         class="video left"
       />
       <p class="feature-text">
-        There are various settings that can used to tune the search page to your device size and network capabilities.
+        Various settings can be used to tune the search page to your device size and network capabilities.
       </p>
       <p class="feature-text">
         Favouriting a post means it can be seen in the Favourites page, and can be downloaded to any directory on your device. 

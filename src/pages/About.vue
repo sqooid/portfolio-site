@@ -53,7 +53,7 @@ document.title = 'Lucas Liu'
 }
 .page-button {
   color: var(--on-background);
-  box-shadow: 0 0 0 .12em var(--on-background);
+  box-shadow: inset 0 0 0 .12em var(--on-background);
 }
 
 .left {

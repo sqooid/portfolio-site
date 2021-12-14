@@ -1,6 +1,7 @@
 <template>
   <div
     class="button"
+    :class="{selected: router.currentRoute.value.path == props.url}"
     @click="onClicked"
   >
     <h3 class="button-text">
@@ -25,6 +26,10 @@ const onClicked = () => {
 </script>
 
 <style scoped>
+.selected {
+	box-shadow: inset 0 2px 0 -1px var(--primary-color);
+}
+
 .button {
 	margin: 0 5px;
 	margin-bottom: 5px;

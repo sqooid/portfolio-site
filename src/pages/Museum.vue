@@ -58,7 +58,7 @@ let exhibits:  {
 		description: "My personal best is 48 seconds"
 	},
 	{
-		img: 'https://cdn.discordapp.com/attachments/864062287102476311/916210250095398942/20211203_171058.jpg',
+		img: 'https://cdn.discordapp.com/attachments/864062287102476311/920215119085072424/20211214_182528.jpg',
 		title: 'Bananas',
 		description: "I use them to measure stuff"
 	},
@@ -70,7 +70,7 @@ let exhibits:  {
 	{
 		img: 'https://cdn.discordapp.com/attachments/864062287102476311/917955747843801088/20211208_124752.jpg',
 		title: 'Zer0 Pop',
-		description: "Colour schemes are hard\nShould have payed more attention\nBack in VisCom class"
+		description: "Colour schemes are hard\nShould have paid more attention\nBack in VisCom class"
 	},
 	{
 		img: 'https://cdn.discordapp.com/attachments/864062287102476311/917955748372303902/20211208_124618.jpg',
