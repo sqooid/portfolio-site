@@ -1,9 +1,10 @@
 :root {
-	--font-family: Avenir, Helvetica, Arial, sans-serif;
-	--background-color: #121212;
+	--background-color: white;
+	--bar-color: #121212;
 	--primary-color: #3DEBD1;
 	--secondary-color: #61707D;
-	--on-background: #FFFFFF;
-	--on-primary: #000000;
-	--on-secondary: #FFFFFF
+	--on-background: #121212;
+	--on-bar: white;
+	--on-primary: #121212;
+	--on-secondary: #121212;
 }

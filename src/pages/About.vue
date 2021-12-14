@@ -1,14 +1,15 @@
 <template>
-  <h1 class="title">
-    Hi, my name is わさび
+  <h1>
+    Hi, my name is Lucas
   </h1>
 </template>
 
 <script lang="ts" setup>
+import '@/style.css';
+document.title = 'About'
 </script>
 
 <style>
-@import '../style.css';
 
 
 </style>

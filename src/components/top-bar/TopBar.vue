@@ -1,39 +1,64 @@
 <template>
   <div class="top-bar">
-    <TopBarButton
-      label="Home"
-      @clicked="onHomeClicked"
-    />
-    <TopBarButton
-      label="Museum"
-      @clicked="onMuseumClicked"
+    <h2 id="bar-logo">
+      Lucas_Liu;
+    </h2>
+    <NavButton
+      v-for="item in buttonList" 
+      :key="item.url"
+      class="top-bar-button"
+      :label="item.label"
+      :url="item.url"
     />
   </div>
-  <div class="spacer layer-top" />
 </template>
 
 <script lang="ts" setup>
-import TopBarButton from './TopBarButton.vue';
+import '@/style.css';
+import NavButton from './NavButton.vue';
 
-const emits = defineEmits(['homeClicked','museumClicked']);
+const buttonList = [
+  {
+    label: "About",
+    url: '/'
+  },
+  {
+    label: 'Projects',
+    url: '/projects'
+  },
+  {
+    label: 'Contact',
+    url: '/contact'
+  }
+]
 
-const onHomeClicked = () => {
-	emits('homeClicked');
-}
-const onMuseumClicked = () => {
-	emits('museumClicked')
-}
 </script>
 
-<style>
-@import '../../style.css';
+
+<style scoped>
+
+#bar-logo {
+  user-select: none;
+	margin: 0;
+	margin-bottom: 5px;
+	width: fit-content;
+	height: fit-content;
+	padding: 14px;
+  color: white;
+  justify-self: left;
+  border: white solid 0.12em;
+}
+
 .top-bar{
-	background-color: var(--primary-color);
+  font-family: 'Inconsolata';
+	background-color: var(--bar-color);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	padding: 10px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 </style>

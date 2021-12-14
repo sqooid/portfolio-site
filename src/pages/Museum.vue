@@ -3,8 +3,8 @@
     <h1 class="title">
       Behold! ...my stuff.
     </h1>
-    <div class="exhibit-list">
-      <Exhibit
+    <div class="grid-list">
+      <GridItem
         v-for="item in exhibits"
         :key="item.img"
         :img="item.img"
@@ -16,8 +16,11 @@
 </template>
 
 <script lang="ts" setup>
-import Exhibit from './Exhibit.vue';
-import {shuffleArray} from '../../util/utils'
+import '@/style.css';
+import GridItem from '@/components/GridItem.vue';
+import {shuffleArray} from '@/util/utils'
+
+document.title = 'Museum'
 
 let exhibits:  {
 	img: string,
@@ -41,8 +44,8 @@ let exhibits:  {
 	},
 	{
 		img: 'https://cdn.discordapp.com/attachments/864062287102476311/916206824989028352/20211203_165829.jpg',
-		title: 'My favourite snack',
-		description: "I would live off these if I could"
+		title: 'Chicken Crimpy Shapes',
+		description: "I could live off these"
 	},
 	{
 		img: 'https://cdn.discordapp.com/attachments/864062287102476311/916207889637593138/20211203_170255.jpg',
@@ -79,13 +82,12 @@ shuffleArray(exhibits);
 </script>
 
 <style>
-@import '../../style.css';
-.exhibit-list {
+.grid-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(470px,1fr));
 }
 @media (max-width: 499px) {
-	.exhibit-list {
+	.grid-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }

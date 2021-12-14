@@ -10,20 +10,24 @@
 </template>
 
 <script lang="ts" setup>
+import router from '@/router'
+
 interface Props {
 	label: string
+	url: string
 }
 const props = defineProps<Props>()
-const emits = defineEmits(['clicked'])
 
 const onClicked = () => {
-	emits("clicked")
+	router.push(props.url);
 }
+
 </script>
 
 <style scoped>
 .button {
 	margin: 0 5px;
+	margin-bottom: 5px;
 	width: fit-content;
 	height: fit-content;
 	padding: 20px;
@@ -32,9 +36,9 @@ const onClicked = () => {
 	align-items: center;
 	background-position: 0 100%;
 	background-size: 100% 200%;
-	background-image: linear-gradient(to top, #0000 50%, var(--secondary-color) 50%);
+	background-image: linear-gradient(to top, #0000 50%, var(--primary-color) 50%);
 	transition: background-position 200ms cubic-bezier(0,1,.65,1);
-	color: var(--on-primary);
+	color: var(--on-bar);
 }
 .button-text {
 	width: fit-content;
@@ -42,12 +46,16 @@ const onClicked = () => {
 	margin: 0 0;
 	user-select: none;
 	letter-spacing: 2px;
+	transition: all 0.2s cubic-bezier(0,1,.65,1);
 }
 
 .button:hover{
 	background-position: 0 0%;
 	cursor: pointer;
-	color: var(--on-secondary);
+}
+
+.button:hover .button-text {
+	color: var(--on-primary);
 }
 
 </style>

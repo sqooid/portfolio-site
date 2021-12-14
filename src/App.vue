@@ -1,57 +1,34 @@
 <template>
-  <TopBar 
-    @home-clicked="onFrontClicked"
-    @museum-clicked="onMuseumClicked"
-  />
-  <Front v-if="currentPage == Page.Front" />
-  <Museum v-if="currentPage == Page.Museum" />
+  <TopBar />
+  <router-view id="content" />
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import Front from "./components/Front.vue"
-import TopBar from "./components/top-bar/TopBar.vue"
-import Museum from "./components/museum/Museum.vue";
-
-enum Page {
-  Front,
-  Museum,
-}
-
-let currentPage = ref(Page.Front);
-
-const onMuseumClicked = () => {
-  currentPage.value = Page.Museum;
-  document.title = 'Museum';
-}
-
-const onFrontClicked = () => {
-  currentPage.value = Page.Front;
-  document.title = 'Home';
-}
-
+import TopBar from "@/components/top-bar/TopBar.vue"
+import './style.css';
 </script>
 
 <style>
-@import './style.css';
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@501&family=Roboto&display=swap');
+
 body {
   background-color: var(--background-color);
   margin: 0;
 }
 
 #app {
-  font-family: var(--font-family);
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var(--on-background);
 }
 
-.title {
-  font-size: 5em;
+.project {
+  max-width: 980px;
+  padding: 20px;
+  margin: auto;
 }
 
-/* * {
-  border: red solid 1px;
-} */
 </style>

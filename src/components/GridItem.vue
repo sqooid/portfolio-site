@@ -1,6 +1,7 @@
 <template>
   <div
     class="tile"
+    :class="{'placeholder': props.title.length == 0}"
   >
     <img
       class="tile-img"
@@ -19,23 +20,25 @@
 </template>
 
 <script lang="ts" setup>
+import '@/style.css';
 
-interface Props {
+export interface GridItemProps {
 	img: string,
 	title: string,
-	description: string,
+	description?: string,
+	path?: string
 }
 
-const props = withDefaults(defineProps<Props>(),{
+const props = withDefaults(defineProps<GridItemProps>(),{
 	img: '',
 	title: '',
 	description: '',
+	path: ''
 }) ;
 
 </script>
 
 <style>
-@import '../../style.css';
 .tile {
 	aspect-ratio: 1;
 	position: relative;
@@ -55,6 +58,7 @@ const props = withDefaults(defineProps<Props>(),{
 	transform: translateY(5%);
 }
 .tile-text {
+	color: white;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -79,5 +83,10 @@ const props = withDefaults(defineProps<Props>(),{
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
+}
+
+.placeholder {
+	cursor: default;
+	pointer-events: none;
 }
 </style>
