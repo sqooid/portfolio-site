@@ -31,7 +31,7 @@
 import '@/style.css';
 import NavButton from '@/components/top-bar/NavButton.vue'
 
-document.title = 'About'
+document.title = 'Lucas Liu'
 </script>
 
 <style>
