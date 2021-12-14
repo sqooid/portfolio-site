@@ -12,7 +12,7 @@
         class="link"
       >source</a>).
     </p>
-    <p>However, coding isn't the only thing I spend my time on. I also love reading, moving around, listening to sick melodies and fantasizing about full dive technology.</p>
+    <p>However, coding isn't the only thing I spend my time on. I also love reading, moving around, listening to good music and fantasizing about full dive technology.</p>
     <div id="museum-section">
       <NavButton
         class="page-button"

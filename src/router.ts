@@ -5,6 +5,7 @@ import Projects from '@/pages/Projects.vue';
 import Cube from '@/pages/projects/Cube.vue';
 import Boored from '@/pages/projects/Boored.vue';
 import Contact from '@/pages/Contact.vue'
+import NotFound from '@/pages/NotFound.vue'
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -36,6 +37,10 @@ const routes: Array<RouteRecordRaw> = [
 		path: '/contact',
 		name: 'Contact',
 		component: Contact
+	},
+	{
+		path: '/:catchAll(.*)',
+		component: NotFound
 	}
 ]
 

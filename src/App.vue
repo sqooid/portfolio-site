@@ -33,7 +33,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--link-color);
   background-position: 0 100%;
 	background-size: 100% 200%;
 	background-image: linear-gradient(to top, #0000 50%, var(--primary-color) 50%);
