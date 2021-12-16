@@ -35,8 +35,6 @@ document.title = 'Lucas Liu'
 </script>
 
 <style>
-
-
 </style>
 
 <style scoped>

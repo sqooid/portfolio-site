@@ -1,6 +1,19 @@
 <template>
   <TopBar />
-  <router-view id="content" />
+  <router-view
+    v-slot="{Component}"
+  >
+    <div id="transition-block">
+      <transition
+        name="slide-left"
+        mode="out-in"
+      >
+        <component
+          :is="Component"
+        />
+      </transition>
+    </div>
+  </router-view>
 </template>
 
 <script lang="ts" setup>
@@ -46,4 +59,16 @@ body {
   border-bottom: var(--secondary-color) 1px solid;
 }
 
+.slide-left-enter-active, .slide-left-leave-active {
+  transition: all 0.1s cubic-bezier(0,1,0.65,1);
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.slide-left-leave-to {
+  opacity: 0;
+}
 </style>
