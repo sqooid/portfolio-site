@@ -25,23 +25,23 @@ const projectList: Array<GridItemProps> = [
     title: 'Vult Password Storage',
     path: '/projects/vult',
   },
+  {
+    img: 'https://cdn.discordapp.com/attachments/864062287102476311/937693131443408976/unknown.png',
+    title: 'Online Big Two',
+    description: 'An online platform to play Big Two with other people',
+    path: '/projects/bigtwo',
+  },
   // {
   //   img: "https://cdn.discordapp.com/attachments/864062287102476311/918675627941453846/Screenshot_2021-12-10_122848.png",
   //   title: "3D graphics",
   //   path: "/projects/cube",
   // },
-  {
-    img: 'https://cdn.discordapp.com/attachments/864062287102476311/937693131443408976/unknown.png',
-    title: 'Online Big Two',
-    description: 'A platform to play the Big Two card game with your friends',
-    path: '/projects/bigtwo',
-  },
-  {
-    img: 'https://cdn.discordapp.com/attachments/864062287102476311/919824080583159808/thumbnail.jpg',
-    title: 'Boored',
-    description: 'Booru browser',
-    path: '/projects/boored',
-  },
+  // {
+  //   img: 'https://cdn.discordapp.com/attachments/864062287102476311/919824080583159808/thumbnail.jpg',
+  //   title: 'Boored',
+  //   description: 'Booru browser',
+  //   path: '/projects/boored',
+  // },
 
   {
     img: '',

@@ -4,8 +4,8 @@
       <h1 style="text-align: center">Online Big Two</h1>
       <p>
         Check it out here:
-        <a href="https://sqooid.ddns.net" class="link">
-          https://sqooid.ddns.net
+        <a href="https://bigtwo.sqooid.tk" class="link">
+          https://bigtwo.sqooid.tk
         </a>
       </p>
       <p>
