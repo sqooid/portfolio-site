@@ -11,9 +11,11 @@
     <p>
       Some of my top skills include C++, C, Python, JavaScript/TypeScript, Vue
       and Kotlin. Some of the other skills that I have some experience in
-      include Rust, C#, Go, OpenGL and React. In fact, this very website is made
-      with Vue (
-      <a href="https://github.com/sqooid/portfolio-site" class="link">source</a>
+      include Rust, C#, Go, OpenGL and React. The source for many of my projects
+      can be found on my Github at
+      <a href="https://github.com/sqooid" class="link">
+        https://github.com/sqooid
+      </a>
       ).
     </p>
     <p>
