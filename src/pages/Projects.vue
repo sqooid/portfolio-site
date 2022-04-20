@@ -31,6 +31,12 @@ const projectList: Array<GridItemProps> = [
     description: 'An online platform to play Big Two with other people',
     path: '/projects/bigtwo',
   },
+  {
+    img: 'https://cdn.discordapp.com/attachments/864062287102476311/966171967965253712/Screenshot_2022-04-20_130202.png',
+    title: 'Save Backup',
+    description: 'A super simple auto backup maker',
+    path: '/projects/savebackup',
+  },
   // {
   //   img: "https://cdn.discordapp.com/attachments/864062287102476311/918675627941453846/Screenshot_2021-12-10_122848.png",
   //   title: "3D graphics",

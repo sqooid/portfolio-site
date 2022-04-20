@@ -8,6 +8,7 @@ import Contact from '@/pages/Contact.vue'
 import NotFound from '@/pages/NotFound.vue'
 import Vult from '@/pages/projects/Vult.vue'
 import BigTwo from '@/pages/projects/BigTwo.vue'
+import SaveBackup from '@/pages/projects/SaveBackup.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -44,6 +45,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/projects/bigtwo',
     name: 'bigtwo',
     component: BigTwo,
+  },
+  {
+    path: '/projects/savebackup',
+    name: 'savebackup',
+    component: SaveBackup,
   },
   {
     path: '/contact',
