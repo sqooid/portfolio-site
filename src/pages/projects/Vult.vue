@@ -8,13 +8,13 @@
       <div class="content width-limiter">
         <p>
           Visit the web app:
-          <a href="https://sqooid.github.io/vult" target="_blank" class="link">
+          <a href="https://vult.sqooid.tk" target="_blank" class="link">
             Vult web app
           </a>
         </p>
         <p>
           Download the unofficial apk:
-          <a href="/assets/files/vult-1.1.apk" class="link">Download</a>
+          <a href="/assets/files/vult.apk" class="link">Download</a>
         </p>
         <p>
           Download on Google play store:
