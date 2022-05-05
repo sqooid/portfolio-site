@@ -37,18 +37,6 @@ const projectList: Array<GridItemProps> = [
     description: 'A super simple auto backup maker',
     path: '/projects/savebackup',
   },
-  // {
-  //   img: "https://cdn.discordapp.com/attachments/864062287102476311/918675627941453846/Screenshot_2021-12-10_122848.png",
-  //   title: "3D graphics",
-  //   path: "/projects/cube",
-  // },
-  // {
-  //   img: 'https://cdn.discordapp.com/attachments/864062287102476311/919824080583159808/thumbnail.jpg',
-  //   title: 'Boored',
-  //   description: 'Booru browser',
-  //   path: '/projects/boored',
-  // },
-
   {
     img: '',
     title: '',
