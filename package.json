@@ -1,34 +1,35 @@
 {
-  "name": "Lucas_Liu",
+  "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix src",
+    "tsc": "vue-tsc --noEmit",
+    "verify": "npm run lint & npm run tsc"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vitejs/plugin-vue": "^2.3.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-prettier-vue": "^3.1.0",
-    "eslint-plugin-vue": "^7.20.0",
+    "eslint-plugin-vue": "^8.0.1",
     "prettier": "^2.5.1",
-    "typescript": "~4.1.5"
+    "typescript": "^4.5.4",
+    "vite": "^2.9.5",
+    "vite-plugin-eslint": "^1.6.0",
+    "vite-plugin-remove-console": "^0.0.7",
+    "vite-plugin-voie": "^0.7.3",
+    "voie-pages": "^0.4.0",
+    "vue-eslint-parser": "^8.3.0",
+    "vue-tsc": "^0.34.7"
   }
 }
